@@ -25,4 +25,13 @@ A Machine Learning and Flask-based web application that classifies news articles
 ---
 
 ## Project Structure
+├── app.py
+├── model.pkl
+├── vectorizer.pkl
+├── requirements.txt
+├── templates/
+│ └── index.html
+└── static/
+└── style.css
+
 
