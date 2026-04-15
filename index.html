@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Fake News Detector</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: linear-gradient(135deg, #1d2671, #c33764);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.1);
+            padding: 40px;
+            border-radius: 20px;
+            width: 420px;
+            text-align: center;
+            color: white;
+            backdrop-filter: blur(15px);
+        }
+
+        input {
+            width: 90%;
+            padding: 12px;
+            border-radius: 10px;
+            border: none;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 12px 25px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            background: linear-gradient(to right, #00c9ff, #92fe9d);
+        }
+
+        .result {
+            margin-top: 20px;
+            padding: 12px;
+            border-radius: 10px;
+            background: rgba(255,255,255,0.2);
+            font-weight: bold;
+        }
+
+        .fake { color: #ff4d4d; }
+        .real { color: #00ff9d; }
+    </style>
+</head>
+
+<body>
+
+<div class="card">
+    <h2>🧠 Fake News Detector</h2>
+
+    <p>⭐ Accuracy: {{ accuracy }}%</p>
+
+    <form method="POST">
+        <input type="text" name="news" placeholder="Enter news headline..." required>
+        <br>
+        <button type="submit">Check</button>
+    </form>
+
+    {% if result %}
+        {% if 'FAKE' in result %}
+            <div class="result fake">{{ result }}</div>
+        {% else %}
+            <div class="result real">{{ result }}</div>
+        {% endif %}
+    {% endif %}
+</div>
+
+</body>
+</html>
