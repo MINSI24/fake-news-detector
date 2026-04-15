@@ -1,26 +1,28 @@
+# Fake News Detection Web Application
 
-# 🧠 AI Fake News Detection System
-
-This is a Machine Learning + Flask based web application that detects whether a news headline is **REAL or FAKE**.
-
----
-
-## 🚀 Features
-- Fake News Detection using ML (Logistic Regression)
-- TF-IDF based text processing
-- Real-time prediction via web interface
-- Shows prediction confidence
-- Simple and clean UI
+A Machine Learning and Flask-based web application that classifies news articles as **Real** or **Fake** based on their content.
 
 ---
 
-## 🛠️ Tech Stack
-- Python 🐍
-- Flask 🌐
-- Scikit-learn 🤖
-- Pandas 📊
-- HTML / CSS 🎨
+## Features
+
+- Classification of news using Logistic Regression
+- Text preprocessing with TF-IDF vectorization
+- Real-time predictions via web interface
+- Confidence score display for predictions
+- Clean and minimal user interface
 
 ---
 
-## 📂 Project Structure
+## Tech Stack
+
+- Python  
+- Flask  
+- Scikit-learn  
+- Pandas  
+- HTML, CSS  
+
+---
+
+## Project Structure
+
